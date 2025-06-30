@@ -18,7 +18,6 @@ private final String name;
 private final Book book;
 public User(String name, Book book) {
 this.name = name;
-2 2,3,5/3
 this.book = book;
 }
 public void run() {
