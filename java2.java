@@ -39,8 +39,7 @@ public class CarRentalApp {
         service.addCar(new Car("Toyota", "Corolla", 30)); 
         service.addCar(new Car("Honda", "Civic", 40)); 
         while (true) { 
-            System.out.println("\n1. Check Availability\n2. Rent Car\n3. Return Car\n4. Compare 
-Rates\n5. Rental Cost\n6. Exit"); 
+            System.out.println("\n1. Check Availability\n2. Rent Car\n3. Return Car\n4. Compare Rates\n5. Rental Cost\n6. Exit"); 
             int choice = sc.nextInt(); sc.nextLine(); 
  
             switch (choice) { 
