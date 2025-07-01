@@ -7,12 +7,10 @@ this.balance = initialBalance;
 // Synchronized withdraw method
 public synchronized void withdraw(double amount, String customerName) {
 if (amount > balance) {
-System.out.println(customerName + " attempted to withdraw $" + amount + " but
-insufficient balance!");
+System.out.println(customerName + " attempted to withdraw $" + amount + " but insufficient balance!");
 } else {
 balance -= amount;
-System.out.println(customerName + " withdrew $" + amount + ". New balance:
-$" + balance);
+System.out.println(customerName + " withdrew $" + amount + ". New balance:$" + balance);
 }
 }
 // Synchronized deposit method
@@ -21,7 +19,6 @@ balance += amount;
 System.out.println(customerName + " deposited $" + amount + ". New balance: $"
 + balance);
 }
-2 2,3,5/3
 // Get balance
 public synchronized double getBalance() {
 return balance;
@@ -59,7 +56,6 @@ c2.join();
 } catch (InterruptedException e) {
 System.out.println("Thread interrupted!");
 }
-System.out.println("All transactions completed. Final ATM balance: $" +
-atm.getBalance());
+System.out.println("All transactions completed. Final ATM balance: $" +atm.getBalance());
 }
 }
