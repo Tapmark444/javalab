@@ -19,7 +19,6 @@ try { Thread.sleep(500); } catch (InterruptedException e) {}
 System.out.println(getName() + " (High Priority) completed.");
 }
 }
-2 2,3,5/3
 // Low-Priority Task
 class LowPriorityTask extends Task {
 public LowPriorityTask(String name) { super(name, Thread.MIN_PRIORITY); }
